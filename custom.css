@@ -1,0 +1,99 @@
+
+.navbar {
+  width: 100%;
+  overflow: auto;
+}
+.navbar a {
+  float: left;
+  padding: 12px;
+  color:#808B96;
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  font-size: 17px;
+  width: 25%;
+  text-align: center;
+}
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+h1{
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #34495E;
+  font-family: 'Abril Fatface', cursive;
+
+}
+
+h2,h3,h4,p,label,button{
+  color:#808B96;
+  font-family: "Raleway", sans-serif;
+  font-size: 17px;
+}
+
+h6{font-family: "Raleway", sans-serif;
+font-size: 17px;
+color:#34495E;
+
+}
+
+
+.map-container-6{
+overflow:hidden;
+padding-bottom:56.25%;
+position:relative;
+height:0;
+}
+.map-container-6 iframe{
+left:0;
+top:0;
+height:100%;
+width:100%;
+position:absolute;
+}
+
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #808B96;
+  color: white;
+  font-size: 20px;
+  padding: 16px 32px;
+  font-family: "Raleway", sans-serif;
+}
